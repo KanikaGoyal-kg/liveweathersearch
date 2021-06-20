@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./css/style.css";
 
 const TempApp = () => {
+
+    const [city, setCity] = useState("pune");
 
     return (
         <>
@@ -18,7 +20,7 @@ const TempApp = () => {
             </div>
         <div className="info">
             <h2 className="location">
-                <i class="fas fa-street-view"></i>
+                <i class="fas fa-street-view"></i>{city}
             </h2>
             <h1 className="temp">
                 5.25Cel
